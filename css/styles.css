@@ -33,6 +33,20 @@ img {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -41,6 +55,10 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+.section {
+  padding: 120px 0;
 }
 
 /* =================== HEADER ============== */
@@ -150,6 +168,7 @@ img {
   padding: 16px 32px;
   border: 0;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -160,8 +179,11 @@ img {
 .features {
 }
 .features-list {
+  display: flex;
+  gap: 24px;
 }
 .features-item {
+  width: 264px;
 }
 .features-title {
   font-weight: 500;
@@ -169,6 +191,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .features-text {
   font-weight: 400;
@@ -181,9 +204,19 @@ img {
   background-color: #f4f4fd;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-item {
+  width: 264px;
   background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.container-team {
+  padding: 32px 0;
 }
 .team-name {
   font-weight: 500;
@@ -192,6 +225,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-job {
   font-weight: 400;
@@ -204,8 +238,17 @@ img {
 .portfolio {
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 .portfolio-item {
+  width: 360px;
+}
+.container-portfolio {
+  padding: 32px 16px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-top: 0;
 }
 .portfolio-name {
   font-weight: 500;
@@ -213,6 +256,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-app {
   font-weight: 400;
@@ -223,6 +267,7 @@ img {
 /* ================================= FOOTER ========================== */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -232,6 +277,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-word {
   color: #f4f4fd;
@@ -242,4 +289,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
