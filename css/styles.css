@@ -169,6 +169,9 @@ img {
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
